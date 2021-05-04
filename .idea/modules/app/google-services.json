@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "263463632556",
+    "firebase_url": "https://social-book-87437.firebaseio.com",
+    "project_id": "social-book-87437",
+    "storage_bucket": "social-book-87437.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263463632556:android:dca43a6a6b630610cd6909",
+        "android_client_info": {
+          "package_name": "com.siddheswar.socialbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263463632556-5ha5keq3a3mv58pg1dhgtucpj8sd5nfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.siddheswar.socialbook",
+            "certificate_hash": "920a41e229877045d7fb5f9634c8ae535bd26c52"
+          }
+        },
+        {
+          "client_id": "263463632556-518opj5vqmv85pp2fp4rc3pqffl0u0pp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAik-Ocbu6uuJGL5JrjU6RNa6Co-bRUhjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263463632556-518opj5vqmv85pp2fp4rc3pqffl0u0pp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
