@@ -12,8 +12,9 @@
         android:roundIcon="@drawable/socialbooklogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Add_Post_Activity"></activity>
-        <activity android:name=".activity_profile"></activity>
+        <activity android:name=".comment"></activity>
+        <activity android:name=".Add_Post_Activity" />
+        <activity android:name=".activity_profile" />
         <activity android:name=".Register_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +24,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <meta-data
             android:name="preloaded_fonts"

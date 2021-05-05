@@ -17,14 +17,16 @@ import android.widget.TextView;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QuerySnapshot;
 
-
-
+import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -73,10 +75,20 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            protected void onBindViewHolder(@NonNull ProductViewHolder holder, int position, @NonNull productModel model) {
+            protected void onBindViewHolder(@NonNull final ProductViewHolder holder, int position, @NonNull productModel model) {
 
                 holder.postDetails.setText(model.getData());
                 holder.txtLikeCount.setText(String.valueOf(model.getLike()));
+                holder.imgIconLike.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        holder.imgIconLike.setImageResource(R.drawable.ic_baseline_thumb_up_24);
+
+
+
+                    }
+                });
+
 
             }
         };
@@ -89,16 +101,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private class ProductViewHolder extends RecyclerView.ViewHolder {
-        TextView txtLikeCount, txtDislikeCount, postDetails;
-        ImageView imgIconLike, imgIconDislike;
+        TextView txtLikeCount,  postDetails,id;
+        ImageView imgIconLike,iconComment;
 
         public ProductViewHolder(@NonNull View itemView) {
             super(itemView);
             postDetails = itemView.findViewById(R.id.Samplepost);
             txtLikeCount = itemView.findViewById(R.id.txtLikeCount);
-            txtDislikeCount = itemView.findViewById(R.id.txtDislikeCount);
-            imgIconDislike = itemView.findViewById(R.id.iconDislike);
             imgIconLike = itemView.findViewById(R.id.iconLike);
+            iconComment = itemView.findViewById(R.id.iconComment);
+            id = itemView.findViewById(R.id.id);
         }
     }
     @Override

@@ -25,7 +25,6 @@ public class productModel {
         this.like = like;
     }
 
-
     public int getLike() {
         return like;
     }
