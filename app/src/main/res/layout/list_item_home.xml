@@ -70,20 +70,18 @@
 
             <TextView
                 android:id="@+id/Samplepost"
-                android:visibility="visible"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="37dp"
-                android:layout_marginTop="49dp"
-                android:layout_marginEnd="176dp"
-                android:layout_marginBottom="234dp"
-                android:text="Sample Post"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="254dp"
+                android:text="Sample Post "
                 android:textColor="@color/colorAccent"
-                android:textSize="35sp" />
+                android:textSize="35sp"
+                android:visibility="visible" />
 
 
         </RelativeLayout>

@@ -48,6 +48,7 @@ public class Add_Post_Activity extends AppCompatActivity {
                 String post = etPost.getText().toString();
                 Map<String, Object> map = new HashMap<>();
                 map.put("data",post);
+                map.put("like",0);
     db.collection("Post").add(map).addOnCompleteListener(Add_Post_Activity.this, new OnCompleteListener<DocumentReference>() {
         @Override
         public void onComplete(@NonNull Task<DocumentReference> task) {
