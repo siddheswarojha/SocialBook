@@ -1,0 +1,2 @@
+# SocialBook
+A social book is a prototype or a concept of a social media platform. This repository is currently under development. social book is highly compatible with any android device.  The concept of firebase fundamentals and advanced java is used in this project. It has several features like posting a post. The user can read and see the post in real-time and even other users can see that post.
